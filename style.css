@@ -1,0 +1,50 @@
+:root {
+  --fs-level-1: 2.2em;
+  --fs-level-2: 2em;
+  --fs-level-3: 1.8em;
+  --fs-level-4: 1.4em;
+  --fs-level-5: 1em;
+
+  --fs-heading: var(--fs-level-1);
+
+  --palette-1: #8c00ff;
+  --palette-2: salmon;
+  --fill-background: var(--palette-1);
+}
+
+/* get yourself some css reset */
+
+html {
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --fill-background: var(--palette-2);
+  }
+  html {
+    font-size: 0.7em;
+  }
+}
+
+html {
+  background-color: var(--fill-background);
+}
+
+h1,
+h2 {
+  font-family: Lato;
+}
+
+h1 {
+  font-size: var(--fs-heading);
+}
+h2 {
+  font-size: var(--fs-level-2);
+}
+h3 {
+  font-size: var(--fs-level-3);
+}
+h4 {
+  font-size: var(--fs-level-4);
+}
